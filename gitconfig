@@ -42,6 +42,7 @@
 	tool = p4merge
 [branch]
 	autosetupmerge = true
+	autosetuprebase = always
 [push]
 	default = upstream
 [gui]
