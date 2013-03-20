@@ -17,10 +17,12 @@
 	co = checkout
 	switch = checkout
 	master = checkout master
+	stable = checkout stable
 	br = branch
 	branches = branch
 	lol = "log --pretty=oneline --abbrev-commit --graph --decorate"
-	lo = "log --oneline"
+	#lo = "log --oneline"
+	lo = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 	changes="log HEAD...master"
 	stat = "log -n 1 --stat"
 	current-branch = "!echo $(git branch --no-color 2> /dev/null | grep \"*\" | cut -d \" \" -f 2)"
@@ -30,6 +32,7 @@
 	diff-stash = "stash show -p stash@{0}"
 	publish = "push -u"
 	zip = "!git archive HEAD --format=zip > archive.zip"
+	deploy-message="!git log --format=%s `git rev-parse --symbolic-full-name --abbrev-ref master@{u}`.."
 [merge]
 	tool = meld
 [mergetool "p4merge"]
