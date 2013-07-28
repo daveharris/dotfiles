@@ -1,0 +1,46 @@
+{
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"maintenance.html",
+		"*.log"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"log",
+		"tmp"
+	],
+	"font_size": 13.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"tab_size": 2,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": false
+}
