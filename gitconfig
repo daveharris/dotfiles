@@ -3,13 +3,14 @@
 	email = dave@harris.org.nz
 [core]
 	pager = less -x4
-	editor = vim
+	editor = sublime --wait
+	excludesfile = /Users/dave/.gitignore_global
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 	interactive = auto
-	ui = auto
+	ui = true
 [alias]
 	s = status
 	st = status
@@ -51,3 +52,5 @@
 [gui]
 	fontui = -family droid -size 4 -weight bold -slant roman -underline 0 -overstrike 0
 	fontdiff = -family droid -size 4 -weight normal -slant roman -underline 0 -overstrike 0
+[credential]
+	helper = osxkeychain
