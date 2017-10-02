@@ -21,6 +21,7 @@
 	stable = checkout stable
 	br = branch
 	branches = branch
+	cleanup = "! git fetch --prune && git branch --merged | grep  -v '\\*\\|master\\|develop\\|release\\|sprints' | xargs -n 1 git branch -d"
 	lol = "log --pretty=oneline --abbrev-commit --graph --decorate"
 	#lo = "log --oneline"
 	lo = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
